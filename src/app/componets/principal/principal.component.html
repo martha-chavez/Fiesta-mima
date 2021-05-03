@@ -1,0 +1,136 @@
+<div class="page-header" data-parallax="true" style="background-image: url('./assets/img/mima/cake1.jpeg');">
+    <div class="filter"></div>
+    <div class="container">
+
+        <div class="motto text-center">
+            <img src="./assets/img/mima/mima.png" alt="Fiesta Mima" class="img1">
+            <h1>Bienvenido a Fiesta Mima</h1>
+            <h3>La mejor pasteleria con diseños ideales para cada ocación.</h3>
+            <br />
+            <a href="https://www.facebook.com/FiestaMima/" class="btn btn-outline-neutral btn-round" target="_blank"><i
+                    class="fa fa-play"></i>Facebook</a>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div>
+                    <h2 class="title">Nosotros</h2>
+                    <p>En fiesta mima somos una pasteleria 100% Moreliana dedicada a ofrecerte
+                        pasteles con diseños ideales para cada ocación, brindandote
+                        siempre productos de la mas alta calidad y con gran sabor.
+                        TODO PARA TUS EVENTOS Fiesta Mima ofrece a sus clientes especial
+                        atención para ofrecer mesas de dulces y paquetes de fiesta totalmente personalizados</p>
+                    <br>
+                </div>
+            </div>
+            <br /><br />
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-pink">
+                            <i class="nc-icon nc-favourite-28"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title"><b>Misión</b></h4><br />
+                            <p>En <b> Fiesta Mima</b> buscamos hacer la vida de nuestros clientes más deliciosa mediante
+                                la comercialización de productos de repostería,
+                                innovando continuamente los sabores, diseños y decoraciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-pink">
+                            <i class="nc-icon nc-sun-fog-29"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title"><b>Visión</b></h4><br />
+                            <p>Nuestra visión es ser una de las mejores pastelerias en Morelia ofreciendo lo mejor que
+                                tenemos para nuestros clientes. Reconosida por crear los productos ideales para cada ocacion y de la
+                                mejor calidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info">
+                        <div class="icon icon-pink">
+                            <i class="nc-icon nc-satisfied"></i>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title"><b>Valores</b></h4><br />
+                            <p>Los clientes son parte muy importante de nuestra organización por lo que algunos de
+                                nustros valores que nos ayudan a trabajar armoniosamente son:
+                                Responsabilidad, Confianza, Comunicación, Honestidad, Respeto, Pasión</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section section-dark text-center">
+        <div class="container">
+            <h2 class="motto"><b>Algunos de nuestros productos: </b></h2>
+            <div class="row">
+                <div class="col-md-3" *ngFor="let img of productos;let indice=index">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="{{img.url}}" target="_blank"><img src="./assets/img/mima/{{img.nombre}}"
+                                    alt="..."></a>
+                        </div>
+                        <div class="card-block">
+                            <a>
+                                <h4 class="info-title">{{img.desc}}</h4>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section landing-section contacto ">
+        <div class="container info-cont">
+            <div class="row">
+
+                <div> 
+                    <h2 class="text-center">Contacto</h2>
+                    <form class="contact-form">
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <label>Nombre</label>
+                                <div class="input-group">
+                                    <!-- <div class="input-group-prepend"> -->
+                                        <span class="input-group-text"><i class="nc-icon nc-single-02"></i></span>
+                       
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Email</label>
+                                <div class="input-group ">
+                                    <!-- <div class="input-group-prepend"> -->
+                                        <span class="input-group-text"> <i class="nc-icon nc-email-85"></i></span>
+                                    <!-- </div> -->
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <label>Mensaje</label>
+                        <textarea class="form-control" rows="4"
+                            placeholder="Escribe algo."></textarea>
+                        <div class="row">
+                            <div >
+                                <button class="btn btn-light btn-lg  enviar ">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+</div>

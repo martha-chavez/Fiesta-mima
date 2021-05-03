@@ -1,0 +1,29 @@
+// .section{
+//     padding: 70px 0;
+//     position: relative;
+//     background-color: #FFFFFF;
+// }
+.img1{
+    // float:right ;
+    width: 25%;
+    height: 25%;
+}
+.title,
+.info-title,
+.yo,
+.info-cont{
+    text-overflow: clip;
+    text-decoration: none;
+    color: #d33d62;
+    // border-color: #c8ff00;
+    text-shadow: #d33d62e1 1px 0 10px;;
+ 
+}
+.icon-pink{
+    color: #d33d62;
+}
+.enviar{
+    position: relative;
+    // color: rgb(0, 0, 0);
+    text-shadow: #d33d62e1 1px 0 10px;
+}
